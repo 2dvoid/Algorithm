@@ -1,5 +1,10 @@
 # Algorithm
 
+Before devoloping an algorithm, ask yourself two questions:   
+1. What exactly do we do on each steps?  
+2. Where do we start and finish?
+
+
 ## Sorting:
 
 ### Bubble Sort:
