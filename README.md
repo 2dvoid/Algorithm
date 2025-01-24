@@ -22,7 +22,7 @@ for i from 0 to n-1:
 * Repeat the above untill i<(n-1).
 
 **C Code:**      
-[Selection Sort](Selection_Sort.md)
+[Selection Sort](Selection_Sort.c)
 
 **Time Complexity:**   
 O(n^2)   
