@@ -21,6 +21,9 @@ for i from 0 to n-1:
 * Now i=1.
 * Repeat the above untill i<(n-1).
 
+**C Code:**      
+[Selection Sort](Selection_Sort.md)
+
 **Time Complexity:**   
 O(n^2)   
 Ω(n^2)   
