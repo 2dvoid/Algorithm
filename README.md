@@ -4,6 +4,14 @@ Before devoloping an algorithm, ask yourself two questions:
 1. What exactly do we do on each steps?  
 2. Where do we start and finish?
 
+## Searching:
+## Binary Search:
+* If lower bound exceeds higher bound that means data is not found and we don't have to proceed any further. so return -1.
+* If data is present at the Mid, then return the index of the Mid
+* If data is smaller than the Mid then search left side
+* If data is bigger than the Mid then search right side
+
+**Code:** [Bubble_Sort.c])(Bubble_Sort.c)
 
 ## Sorting:
 
@@ -38,7 +46,7 @@ Selection Sort selects the smallest element from the unsorted array and swaps it
 * Now i=1.
 * Repeat the above untill i<(n-1).
 
-**Psudocode:**
+**Pseudocode:**
 for i from 0 to n-1:
 * Find the smallest number between array[i] and array [n-1]   
 * Swap the smallest number array[i]
