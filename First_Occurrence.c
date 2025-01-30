@@ -17,7 +17,8 @@ int firstOccurrence (int *arr, int low, int high, int target) {
     if (low > high) return -1;
     int mid = low + (high-low) / 2;
     if (arr[mid] == target) {
-        // If mid is at index 0 or the element at the previous index is not equal to the element at the mid then this is the answer
+        // If mid is at index 0 OR the element at it's previous index 
+        // is not equal to the element at the mid then this is the answer
         if (mid == 0 || arr[mid-1] != target) return mid;
         // Else search to the left
         else return firstOccurrence (arr, low, mid-1, target);
