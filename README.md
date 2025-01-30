@@ -11,7 +11,15 @@ Before devoloping an algorithm, ask yourself two questions:
 * If data is smaller than the Mid then search left side
 * If data is bigger than the Mid then search right side
 
-**Code:** [Bubble_Sort.c])(Bubble_Sort.c)
+**Code:** [Bubble_Sort.c](Bubble_Sort.c)
+
+**Problems:**    
+Find First Position of Element in Sorted Array:
+* If Target matches the element in the Mid position, then if the index at the mid is 0 or the element at the mid does not matches the elemnt at it's previous position then Mid is the postion you are looking for. Return Mid
+* Else Search the left side
+
+Code: [First_Occurrence.c](First_Occurrence.c)
+
 
 ## Sorting:
 
