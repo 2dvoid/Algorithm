@@ -13,10 +13,11 @@ Before devoloping an algorithm, ask yourself two questions:
 
 **Code:** [Bubble_Sort.c](Bubble_Sort.c)
 
-**Problems:**    
-Find First Position of Element in Sorted Array:
-* If Target matches the element in the Mid position, then if the index at the mid is 0 or the element at the mid does not matches the elemnt at it's previous position then Mid is the postion you are looking for. Return Mid
-* Else Search the left side
+**Common Problems:**    
+*Find First Position of Element in Sorted Array:*
+* Check if the Target matches the element at the Mid position.
+* If matches then we have to check two more conditions. If the Mid is at index 0 Or the previous element of the Mid is different than the Mid element then the first occurrence is in this Mid index. Simply return the Mid index.
+* Else Search the left side of the array
 
 Code: [First_Occurrence.c](First_Occurrence.c)
 
