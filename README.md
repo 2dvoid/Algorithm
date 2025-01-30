@@ -11,7 +11,7 @@ Before devoloping an algorithm, ask yourself two questions:
 * If data is smaller than the Mid then search left side
 * If data is bigger than the Mid then search right side
 
-**Code:** [Bubble_Sort.c](Bubble_Sort.c)
+**Code:** [Binary_Search.c](Binary_Search.c)
 
 **Common Problems:**    
 *Find First Position of Element in Sorted Array:*
