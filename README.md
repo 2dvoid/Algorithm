@@ -32,7 +32,7 @@ Before devoloping an algorithm, ask yourself two questions:
 * Find the Last Occurrence
 * Frequency = (Last Occur - First Occur)+1
 
-**Code:** [Frequncy.c](Binary_Search/Frequncy.c)
+**Code:** [Frequency.c](Binary_Search/Frequency.c)
 
 
 ## Sorting:
