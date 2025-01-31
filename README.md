@@ -25,7 +25,15 @@ Before devoloping an algorithm, ask yourself two questions:
 **Find the last position of an element in a sorted array:**
 * Modify the algorithm of searching First position of an element.
 
-**Code:** [Last_Occurrence.c](Binary_Search/Last_Occurrrence.c)
+**Code:** [Last_Occurrence.c](Binary_Search/Last_Occurrence.c)
+
+**Count the Frequrncy of an element (How many time it appears):**    
+* Find the First Occurrence
+* Find the Last Occurrence
+* Frequency = (Last Occur - First Occur)+1
+
+**Code:** [Frequncy.c](Binary_Search/Frequncy.c)
+
 
 ## Sorting:
 
