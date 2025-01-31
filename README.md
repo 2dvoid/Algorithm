@@ -11,7 +11,7 @@ Before devoloping an algorithm, ask yourself two questions:
 * If data is smaller than the Mid then search left side
 * If data is bigger than the Mid then search right side
 
-**Code:** [Binary_Search.c](Binary_Search.c)
+**Code:** [Binary_Search.c](Binary_Search/Binary_Search.c)
 
 **Common Problems:**    
 
@@ -20,12 +20,12 @@ Before devoloping an algorithm, ask yourself two questions:
 * If matches then we have to check two more conditions. If the Mid is at index 0 Or the previous element of the Mid is different than the Mid element then the first occurrence is in this Mid index. Simply return the Mid index.
 * Else Search the left side of the array
 
-**Code:** [First_Occurrence.c](First_Occurrence.c)
+**Code:** [First_Occurrence.c](Binary_Search/First_Occurrence.c)
 
 **Find the last position of an element in a sorted array:**
 * Modify the algorithm of searching First position of an element.
 
-**Code:** [Last_Occurrence.c](Last_Occurrrence.c)
+**Code:** [Last_Occurrence.c](Binary_Search/Last_Occurrrence.c)
 
 ## Sorting:
 
