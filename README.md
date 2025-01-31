@@ -14,13 +14,18 @@ Before devoloping an algorithm, ask yourself two questions:
 **Code:** [Binary_Search.c](Binary_Search.c)
 
 **Common Problems:**    
-*Find First Position of Element in Sorted Array:*
+
+**Find the first position of an element in a sorted array:**
 * Check if the Target matches the element at the Mid position.
 * If matches then we have to check two more conditions. If the Mid is at index 0 Or the previous element of the Mid is different than the Mid element then the first occurrence is in this Mid index. Simply return the Mid index.
 * Else Search the left side of the array
 
-Code: [First_Occurrence.c](First_Occurrence.c)
+**Code:** [First_Occurrence.c](First_Occurrence.c)
 
+**Find the last position of an element in a sorted array:**
+* Modify the algorithm of searching First position of an element.
+
+**Code:** [Last_Occurrence.c](Last_Occurrrence.c)
 
 ## Sorting:
 
