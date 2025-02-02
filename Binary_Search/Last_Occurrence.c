@@ -1,28 +1,28 @@
 #include <stdio.h>
 
-int lastOccurrence (int *arr, int low, int high, int target);
+int findLast(int *arr, int n, int target);
 
 int main () {
-    int arr[]={1,3,3,3,4,50,60,60,60};
+    int arr[]={5,5,5,10,10,40,60,70,70,70,70,80};
     int n = sizeof (arr) / sizeof (arr[0]);
-    int target = 60;
-    int result = lastOccurrence(arr, 0, n-1, target);
-    
-    if (result==-1) printf("Target Not Found\n");
-    else printf("Target Found at Position: %d\n", result);
-    
+    int target =5;
+    int result = findLast(arr, n, target);
+    if (result==-1) printf("Data is not present\n");
+    else printf("Last occurrence found at index %d\n", result);
 }
-    
-int lastOccurrence(int *arr, int low, int high, int target) {
-    if (low > high) return -1;
-    int mid = low + (high - low) / 2;
-    if (arr[mid] == target) {
-        if (mid == high || arr[mid+1] != target) return mid;
-        // Search Right
-        else return lastOccurrence(arr, mid+1, high, target);
+
+int findLast(int *arr, int n, int target){
+    int low = 0, high =  n-1;
+    while (low <= high) {
+        int  mid = low + (high-low)/2;
+        if (arr[mid]==target) {
+            // Check if the current number is the last occurrence or not
+            if (mid==n-1 || arr[mid+1]!=target) return mid;
+            // If not, then start searching right
+            else low = mid+1;
+        }
+        else if (target > arr[mid]) low = mid+1;
+        else high = mid-1;
     }
-    // If target is bigger then Search Right
-    else if (target > arr[mid]) return lastOccurrence(arr, mid+1, high, target);
-    // If target is smaller then Search Right
-    else return lastOccurrence(arr, low, mid-1, target);
+    return -1;
 }
