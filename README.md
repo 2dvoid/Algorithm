@@ -34,6 +34,12 @@ Before devoloping an algorithm, ask yourself two questions:
 
 **Code:** [Frequency.c](Binary_Search/Frequency.c)
 
+**Find the smallest element that is bigger than the target (Immediate Senior)**
+* Find the last occurrence of the target.
+* If the last occurrence is at the last index of the array then there is no immediate senior.
+* If the last occurrence and it's next element are different then the next element is the immediate senior.
+
+**Code:** [Immediate_Senior.c](Binary_Search/Immediate_Senior.c)
 
 ## Sorting:
 
