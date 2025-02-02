@@ -41,6 +41,13 @@ Before devoloping an algorithm, ask yourself two questions:
 
 **Code:** [Immediate_Senior.c](Binary_Search/Immediate_Senior.c)
 
+**Find the biggest element that is smaller than the target (Immediate Junior)**
+* Find the first occurrence of the target.
+* If the first occurrence is at the 0th index of the array then there is no immediate junior.
+* If the first occurrence and it's previous element are different, then the previous element is the immediate junior.
+
+**Code:** [Immediate_Junior.c](Binary_Search/Immediate_Junior.c)
+
 ## Sorting:
 
 ### Bubble Sort:
