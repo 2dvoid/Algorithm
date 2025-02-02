@@ -17,8 +17,8 @@ Before devoloping an algorithm, ask yourself two questions:
 
 **Find the first position of an element in a sorted array:**
 * Check if the Target matches the element at the Mid position.
-* If matches then we have to check two more conditions. If the Mid is at index 0 Or the previous element of the Mid is different than the Mid element then the first occurrence is in this Mid index. Simply return the Mid index
-* Else Search the left side of the array
+* If a match is found, we need to check two additional conditions to confirm it's the first occurrence. First, if Mid is at index 0, or second, if the element before Mid is different. If either condition is met, then Mid is the first occurrence, and we simply return its index.
+* Else Search the left side of the array. Cause first occurrence would be at the left.
 
 **Code:** [First_Occurrence.c](Binary_Search/First_Occurrence.c)
 
