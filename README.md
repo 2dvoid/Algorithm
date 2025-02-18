@@ -61,11 +61,12 @@ The inner loop runs (n-1-i) times during the i-th iteration of the outer loop be
 After the inner loop completes, we check if any swap was done or not by check the swap flag. If no swap was done that means the elements are already sorted, and we don't have to proceed any further and we break the out of the outer loop.
 
 **Code:**
-[Bubble Sort.c](Bubble_Sort.c)
+[Bubble Sort.c](Sorting/Bubble_Sort.c)
 
 **Time Complexity:**   
 O(n^2)   
 Ω(n)   
+Θ(n^2)
 
 ### Selection Sort:
 Selection Sort selects the smallest element from the unsorted array and swaps it with the first element of the unsorted portion of the array.
@@ -88,7 +89,7 @@ for i from 0 to n-1:
 
 
 **Code:**      
-[Selection Sort.c](Selection_Sort.c)
+[Selection Sort.c](Sorting/Selection_Sort.c)
 
 **Time Complexity:**   
 O(n^2)   
@@ -96,3 +97,35 @@ O(n^2)
 Θ (n^2)   
 
 This Algorithm is very inefficient with a time. It does not even check if the array is sorted. It will blindly run even if the array is already sorted.
+
+### Insertion Sort:   
+Insertion Sort builds a sorted array one element at a time by taking each element and placing it in its correct position relative to the already sorted part. It works by shifting larger elements to the right and inserting the current element in its proper place.   
+
+**Steps:**   
+1. Start with the second element (index `1`) since a single element is already sorted.
+2. Store the current element in a temporary variable (`tmp`).
+3. Compare `tmp` with the previous elements.
+4. Shift any larger elements one position to the right.
+5. Insert `tmp` into its correct position.
+6. Repeat steps 2-5 for all elements in the array.
+7. Continue until the entire array is sorted.
+
+**Pseudocode:**   
+```
+INSERTION_SORT(A, n):
+    for i = 1 to n-1:
+        tmp = A[i]
+        j = i - 1
+        while j >= 0 and A[j] > tmp:
+            A[j + 1] = A[j]  // Shift element to the right
+            j = j - 1
+        A[j + 1] = tmp  // Insert element at the correct position
+```
+
+**Code:**
+[Insertion Sort.c](Sorting/Insertion_Sort.c)
+
+**Time Complexity:**   
+O(n^2)   
+Ω(n)   
+Θ (n^2) 
