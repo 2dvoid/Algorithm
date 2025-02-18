@@ -101,6 +101,11 @@ This Algorithm is very inefficient with a time. It does not even check if the ar
 ### Insertion Sort:   
 Insertion Sort builds a sorted array one element at a time by taking each element and placing it in its correct position relative to the already sorted part. It works by shifting larger elements to the right and inserting the current element in its proper place.   
 
+**Visualization:**   
+[Video 1](https://www.youtube.com/watch?v=E8svn2Wgri8)    
+[Video 2](https://youtu.be/8mJ-OhcfpYg?si=Hiyv4poTvnf8Zrft)    
+[Video 3](https://youtu.be/IniSptbttgg?si=P_x6qKLnzRDDFqN6)    
+
 **Steps:**   
 1. Start with the second element (index `1`) since a single element is already sorted.
 2. Store the current element in a temporary variable (`tmp`).
